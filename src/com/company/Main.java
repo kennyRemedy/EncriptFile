@@ -61,8 +61,8 @@ import java.security.NoSuchAlgorithmException;
 
 
             File inputFile = new File(System.getProperty("user.home"),"/Lb/serverCredential.db");
-            File encryptedFile = new File("serverCredential.encrypted");
-            File decryptedFile = new File("serverCredential.decrypted");
+            File encryptedFile = new File("serverCredential.db.encrypted");
+            File decryptedFile = new File("serverCredential.db.decrypted");
 
             try {
                 encrypt(key, inputFile, encryptedFile);
