@@ -26,7 +26,8 @@ public class FileEncrypt {
     System.out.println(key.length());
 
     */
-    //this key is for illustration only
+
+    //this key is for illustration only, subtitute if with yours
     public static final String KEY = "Mary has one cat";
     private static final String ALGORITHM = "AES";
     private static final String TRANSFORMATION = "AES";
@@ -56,7 +57,7 @@ public class FileEncrypt {
     }
 
     /**
-     *  //this is the common methos used to encrypt and decrypt a file
+     *  //this is the common method used to encrypt and decrypt a file
      * @param cipherMode=specify either is encryption or decryption
      * @param key=key used to encrypt a file
      * @param inputFile=the file to deal with
