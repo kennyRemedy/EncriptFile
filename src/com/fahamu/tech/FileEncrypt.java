@@ -20,14 +20,14 @@ public class FileEncrypt {
     check for key length of AES or you can change to any algorithm.
     check :-  https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html
 
-    //to test the length of the key try this, untill you get right length
+    //to test the length of the key try this, until you get right length
 
     String key ="<your key>";
     System.out.println(key.length());
 
     */
 
-    //this key is for illustration only, subtitute if with yours
+    //this key is for illustration only, substitute it with yours
     public static final String KEY = "Mary has one cat";
     private static final String ALGORITHM = "AES";
     private static final String TRANSFORMATION = "AES";
@@ -73,8 +73,7 @@ public class FileEncrypt {
 
             FileInputStream inputStream = new FileInputStream(inputFile);
             byte[] inputBytes = new byte[(int) inputFile.length()];
-            int read = inputStream.read(inputBytes);
-            System.out.println(read);
+            inputStream.read(inputBytes);
 
             byte[] outputBytes = cipher.doFinal(inputBytes);
 
