@@ -28,7 +28,8 @@ public class FileEncrypt {
     */
 
     //this key is for illustration only, substitute it with yours
-    public static final String KEY = "Mary has one cat";
+    //you can use "Mary has one cat" as an example
+    public static final String KEY="Mary has one cat";
     private static final String ALGORITHM = "AES";
     private static final String TRANSFORMATION = "AES";
 
